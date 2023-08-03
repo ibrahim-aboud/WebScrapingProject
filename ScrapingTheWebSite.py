@@ -245,6 +245,10 @@ json_dictionary['autoBip']=car_list
 final_json_string = json.dumps(json_dictionary,indent=2)
 print(final_json_string)
 
+# saving the result in a json file
+with open("output.json", "w") as json_file:
+    json_file.write(final_json_string)
+
 # NOTES : 
 # inorder to prevent stale element refrence exception
 # it is recommended to run the program as many times as the number
