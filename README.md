@@ -1,1 +1,1 @@
-NOTE : this file contains webscraping code, for learning purposes only.
+NOTE : this project is for learning purposes only.
