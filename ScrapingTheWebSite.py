@@ -8,11 +8,9 @@ from selenium.common.exceptions import NoSuchElementException
 import time
 import json
 
-#______________________________________AUTOBIP SCRAPING PROJECT___________________________________________
+#______________________________________SCRAPING PROJECT__________________________________________
 
-#___________________________________________by Aboud Ibrahim_______________________________________________
-
-#___________________________for imediate use, scroll down to the end of the code snippet_____________________________
+#________________for imediate use, scroll down to the end of the code snippet____________________
 
 #this function is equivalent to "previous page", not used in this code but might be useful elsewhere
 def efficient_back(driver):
@@ -241,7 +239,7 @@ car_list = scan_brand(0,car_list)
 
 # once run all the method as many times as the number of brands, convert the list into a json string, you can then save it as a json file
 json_dictionary={}
-json_dictionary['autoBip']=car_list
+json_dictionary['Cars']=car_list
 final_json_string = json.dumps(json_dictionary,indent=2)
 print(final_json_string)
 
